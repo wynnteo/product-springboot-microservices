@@ -76,7 +76,7 @@ public class ProductServiceImplTest {
         assertNotNull(result);
     }
 
-     @Test
+    @Test
     public void testUpdateNonExistentProduct() {
         when(productRepository.findById(anyLong())).thenReturn(Optional.empty());
 
